@@ -1,0 +1,69 @@
+version: "3.7"
+
+volumes:
+  postgres:
+  caddy-certs:
+
+services:
+  caddy:
+    image: "caddy:2.7.6-alpine"
+    restart: "unless-stopped"
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - "./conf/caddy/Caddyfile:/etc/caddy/Caddyfile"
+      - "caddy-certs:/data/caddy/certificates"
+    environment:
+      - DOMAIN
+    logging:
+      driver: "json-file"
+      options:
+        max-file: "5"
+        max-size: 10m
+    depends_on:
+      - directus
+
+  directus:
+    image: "directus/directus:latest"
+    restart: "unless-stopped"
+    ports:
+      - "8055:8055"
+    environment:
+      - KEY=${DIRECTUS_KEY}
+      - SECRET=${DIRECTUS_SECRET}
+      - DB_CLIENT=${DIRECTUS_DB_CLIENT}
+      - DB_HOST=${DIRECTUS_DB_HOST}
+      - DB_PORT=${DIRECTUS_DB_PORT}
+      - DB_DATABASE=${DIRECTUS_DB_DATABASE}
+      - DB_USER=${DIRECTUS_DB_USER}
+      - DB_PASSWORD=${DIRECTUS_DB_PASSWORD}
+      - ADMIN_EMAIL=${DIRECTUS_ADMIN_EMAIL}
+      - ADMIN_PASSWORD=${DIRECTUS_ADMIN_PASSWORD}
+      - CORS_ENABLED=true
+      - CORS_ORIGIN=true
+    volumes:
+      - "./data/directus/uploads:/directus/uploads:rw"
+    logging:
+      driver: "json-file"
+      options:
+        max-file: "5"
+        max-size: 10m
+    depends_on:
+      - postgres
+
+  postgres:
+    image: "postgis/postgis:14-master"
+    restart: "always"
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+    volumes:
+      - "postgres:/var/lib/postgresql/data"
+    ports:
+      - "25000:5432"
+    logging:
+      driver: "json-file"
+      options:
+        max-file: "5"
+        max-size: "10m"
