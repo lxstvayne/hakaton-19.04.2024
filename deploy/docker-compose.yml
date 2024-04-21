@@ -11,9 +11,11 @@ services:
     ports:
       - "80:80"
       - "443:443"
+      - "8080:8080"
     volumes:
       - "./conf/caddy/Caddyfile:/etc/caddy/Caddyfile"
       - "caddy-certs:/data/caddy/certificates"
+      - "./data/frontend:/srv/app/public"
     environment:
       - DOMAIN
     logging:

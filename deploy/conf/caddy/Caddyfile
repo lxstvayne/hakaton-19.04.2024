@@ -4,3 +4,8 @@
 
     reverse_proxy directus:8055
 }
+
+:8080 {
+    root * /srv/app/public
+    file_server
+}

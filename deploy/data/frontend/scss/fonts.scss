@@ -1,0 +1,88 @@
+/* Neue Machina-200*/
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'TT Firs Neue';
+    font-style: normal;
+    font-weight: 200;
+    src: url('fonts/TTFirsNeue-ExtraLight.eot'); /* IE9 Compat Modes */
+    src: url('fonts/TTFirsNeue-ExtraLight.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/TTFirsNeue-ExtraLight.woff') format('woff'), /* Modern Browsers */
+         url('fonts/TTFirsNeue-ExtraLight.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+/* Neue Machina-300*/
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'TT Firs Neue';
+    font-style: normal;
+    font-weight: 300;
+    src: url('fonts/TTFirsNeue-Light.eot'); /* IE9 Compat Modes */
+    src: url('fonts/TTFirsNeue-Light.woff2') format('woff2'), /* Super Modern Browsers */
+        url('fonts/TTFirsNeue-Light.woff') format('woff'), /* Modern Browsers */
+        url('fonts/TTFirsNeue-Light.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+/* Neue Machina-regular*/
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'TT Firs Neue';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/TTFirsNeue-Regular.eot'); /* IE9 Compat Modes */
+    src: url('fonts/TTFirsNeue-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+        url('fonts/TTFirsNeue-Regular.woff') format('woff'), /* Modern Browsers */
+        url('fonts/TTFirsNeue-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+/* Neue Machina-500*/
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'TT Firs Neue';
+    font-style: normal;
+    font-weight: 500;
+    src: url('fonts/TTFirsNeue-Medium.eot'); /* IE9 Compat Modes */
+    src: url('fonts/TTFirsNeue-Medium.woff2') format('woff2'), /* Super Modern Browsers */
+        url('fonts/TTFirsNeue-Medium.woff') format('woff'), /* Modern Browsers */
+        url('fonts/TTFirsNeue-Medium.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+/* Neue Machina-600 */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'TT Firs Neue';
+    font-style: normal;
+    font-weight: 600;
+    src: url('fonts/TTFirsNeue-Bold.eot'); /* IE9 Compat Modes */
+    src: url('fonts/TTFirsNeue-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+    url('fonts/TTFirsNeue-Bold.woff') format('woff'), /* Modern Browsers */
+    url('fonts/TTFirsNeue-Bold.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+/* Neue Machina-700 */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'TT Firs Neue';
+    font-style: normal;
+    font-weight: 700;
+    src: url('fonts/TTFirsNeue-Bold.eot'); /* IE9 Compat Modes */
+    src: url('fonts/TTFirsNeue-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+        url('fonts/TTFirsNeue-Bold.woff') format('woff'), /* Modern Browsers */
+        url('fonts/TTFirsNeue-Bold.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+/* Neue Machina-800*/
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'TT Firs Neue';
+    font-style: normal;
+    font-weight: 800;
+    src: url('fonts/TTFirsNeue-ExtraBold.eot'); /* IE9 Compat Modes */
+    src: url('fonts/TTFirsNeue-ExtraBold.woff2') format('woff2'), /* Super Modern Browsers */
+        url('fonts/TTFirsNeue-ExtraBold.woff') format('woff'), /* Modern Browsers */
+        url('fonts/TTFirsNeue-ExtraBold.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+/* Neue Machina-900*/
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'TT Firs Neue';
+    font-style: normal;
+    font-weight: 900;
+    src: url('fonts/TTFirsNeue-Black.eot'); /* IE9 Compat Modes */
+    src: url('fonts/TTFirsNeue-Black.woff2') format('woff2'), /* Super Modern Browsers */
+        url('fonts/TTFirsNeue-Black.woff') format('woff'), /* Modern Browsers */
+        url('fonts/TTFirsNeue-Black.ttf') format('truetype'); /* Safari, Android, iOS */
+}
